@@ -50,6 +50,7 @@ box={
 		target,
 		tween,
 		state,
+		id,
 	},
 }
 ```
@@ -72,5 +73,6 @@ box={
 |`easeFunc`          |*string*   |`linear` |The tween procedure                                        |
 |`subject`           |*table*    |{}       |The starting values when the event starts                  |
 |`target`            |*table*    |{}       |The values targeted before the event ends                  |
-|`tween`             |*table*    |tweenobj |A tween object that process the event                      |
+|`tween`             |*table*    |*tween*  |A tween object that process the event                      |
 |`state`             |*string*   |*`empty`*|The state of the event can be: *`empty` `alive`* & *`dead`*|
+|`id`                |*number*   |NotStatic|A number that identifies the event *(NOT IMPLEMENTED YET!)*|
