@@ -200,10 +200,29 @@ if love then --[[We are in love! (u gotcha?)]]
 		end
 		if type(source)==text then
 			self.source = love.audio.newSource(source, stream)
-			return
+		end
+		function self.play(self)
+			self.source:play = self.source.play
+		end
+		function self.stop(self)
+			self.source:stop = self.source.stop
+		end
+		function self.rewind(self)
+			self.source:rewind = self.source.rewind
+		end
+		function self.seek(self)
+			self.source:seek = self.source.seek
+		end
+		function self.tell(self)
+			self.source:tell = self.source.tell
 		end
 	end
 	function tm.detachSource(self)
+		self.play   = nil
+		self.stop   = nil
+		self.rewind = nil
+		self.seek   = nil
+		self.tell   = nil
 	end
 end
 
