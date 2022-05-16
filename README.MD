@@ -1,4 +1,4 @@
-**TIMELINE**
+### TIMELINE ###
 ## DESCRIPTION ##
 *A simple time dependent event manager*
 
