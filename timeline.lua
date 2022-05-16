@@ -83,7 +83,7 @@ function tm.new(self, start, duration, subject, target, easeFunc, relative)
 		subject=subject,
 		target=target,
 		tween=tween.new(duration, subject, target, easeFunc),
-		state=false,
+		state='empty',
 	}
 	if not relative then
 		new.duration=start-duration

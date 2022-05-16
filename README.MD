@@ -25,4 +25,34 @@ where *``easingType``* and *``isRelative``* are optional.
 ```lua
 box:update(dt)
 ```
-where *``dt``* is optional
+where *``dt``* is optional.
+
+in *`box.eventList`* there is a table with the objects, remember the **BOX** analogy? that objects are the timers
+this is general structure (It can change without notice)
+```lua
+box={
+	clock,
+	duration,
+	update,
+	set,
+	reset,
+	new,
+	draw,
+	getValue,
+	setDuration,
+	setVerbosity,
+	eventList={
+		{--This is object/event #1
+		start,
+		duration,
+		easeFunc,
+		subject,
+		target,
+		tween,
+		state,
+	},
+}
+```
+*NAME*|*TYPE*|*DEFAULT*|*DESCRIPTION*|
+--------------------------------------
+`clock`|*number*|`0`|The time **INSIDE** the box
