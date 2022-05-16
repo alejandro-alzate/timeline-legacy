@@ -55,7 +55,7 @@ box={
 ```
 
 |*NAME*              |*TYPE*     |*DEFAULT*|*DESCRIPTION*                            |
-|--------------------|-----------|-----------------------------------------------    |
+|--------------------|-----------|---------|-----------------------------------------|
 |`clock`             |*number*   |`0`      |The time **INSIDE** the box              |
 |`box.duration`      |*number*   |`10`     |The duration of the whole *timeline*     |
 |`update`            |*function* |         |Updates the box an its timers            |
