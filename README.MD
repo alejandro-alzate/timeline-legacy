@@ -63,7 +63,7 @@ box={
 |`set`               |*function* |         |Set a var on a timeline object                             |
 |`reset`             |*function* |         |Set the clock to `0`                                       |
 |`new`               |*function* |         |Adds an event on the timeline                              |
-|`draw`              |*function* |         |Draws the timeline **(BETA)**                              |
+|`draw`              |*function* |         |Draws the timeline **(BETA AWFUL, commits are welcome)**   |
 |`getValue`          |*function* |         |Get a value without if exist                               |
 |`setDuraion`        |*function* |         |Just sets box.duration for clean code                      |
 |`setVerbosity`      |*function* |         |Activates/Deactivates debug prints.                        |
