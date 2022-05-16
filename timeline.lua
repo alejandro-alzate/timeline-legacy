@@ -47,6 +47,11 @@ function tm.update(self, dt)
 	if type(dt) == 'number' then
 		self.clock = self.clock + dt
 	end
+	if self.source then
+		if self.source.tell then
+			self.clock = self.source:tell()
+		end
+	end
 	for i,v in pairs(self.eventList) do
 		self.eventList[i].tween:set(self.clock-v.start)
 		v.state = 'empty'
@@ -105,6 +110,8 @@ function timeline.newBox(duration) --[[Makes an box where the event will put in]
 		getValue=tm.getValue,
 		setDuration=tm.setDuration,
 		setVerbosity=tm.setVerbosity,
+		attachSource=tm.attachSource,
+		detachSource=tm.detachSource,
 	},
 	true
 end
@@ -126,6 +133,7 @@ function tm.setVerbosity(self, toggle)
 end
 
 function tm.setDuration(self, duration)
+
 	self.duration = duration
 end
 
@@ -182,6 +190,20 @@ if love then --[[We are in love! (u gotcha?)]]
 			love.graphics.print(text, (((self.clock/self.duration)*w)+5)+x, (h/3)+14+y)
 			love.graphics.setColor(r, g, b, a)
 		end
+	end
+	function tm.attachSource(self, source)
+		if self.source then
+			self.clock = 0
+			if self.source.stop then
+				self.source.stop()
+			end
+		end
+		if type(source)==text then
+			self.source = love.audio.newSource(source, stream)
+			return
+		end
+	end
+	function tm.detachSource(self)
 	end
 end
 
