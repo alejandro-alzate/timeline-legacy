@@ -53,6 +53,6 @@ box={
 	},
 }
 ```
-*NAME*|*TYPE*|*DEFAULT*|*DESCRIPTION*|
+|*NAME*|*TYPE*|*DEFAULT*|*DESCRIPTION*|
 --------------------------------------
-`clock`|*number*|`0`|The time **INSIDE** the box
+|`clock`|*number*|`0`|The time **INSIDE** the box|
