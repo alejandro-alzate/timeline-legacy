@@ -54,23 +54,23 @@ box={
 }
 ```
 
-|*NAME*              |*TYPE*     |*DEFAULT*|*DESCRIPTION*                            |
-|--------------------|-----------|---------|-----------------------------------------|
-|`clock`             |*number*   |`0`      |The time **INSIDE** the box              |
-|`box.duration`      |*number*   |`10`     |The duration of the whole *timeline*     |
-|`update`            |*function* |         |Updates the box an its timers            |
-|`set`               |*function* |         |Set a var on a timeline object           |
-|`reset`             |*function* |         |Set the clock to `0`                     |
-|`new`               |*function* |         |Adds an event on the timeline            |
-|`draw`              |*function* |         |Draws the timeline **(BETA)**            |
-|`getValue`          |*function* |         |Get a value without if exist             |
-|`setDuraion`        |*function* |         |Just sets box.duration for clean code    |
-|`setVerbosity`      |*function* |         |Activates/Deactivates debug prints.      |
-|`eventList`         |*table*    |         |The objects inside the **BOX**           |
-|`start`             |*number*   |`0`      |The start of an event relative to `clock`|
-|`eventList.duration`|*number*   |`0`      |How long an event will last              |
-|`easeFunc`          |*string*   |`linear` |The tween procedure                      |
-|`subject`           |*table*    |{}       |The starting values when the event starts|
-|`target`            |*table*    |{}       |The values targeted before the event ends|
-|`tween`             |*table*    |tweenobj |A tween object that process the event    |
-|`state`             |*string*   |*`empty`*|The state of the event can be: *`empty alive`* & *`dead`*|
+|*NAME*              |*TYPE*     |*DEFAULT*|*DESCRIPTION*                                              |
+|--------------------|-----------|---------|-----------------------------------------------------------|
+|`clock`             |*number*   |`0`      |The time **INSIDE** the box                                |
+|`box.duration`      |*number*   |`10`     |The duration of the whole *timeline*                       |
+|`update`            |*function* |         |Updates the box an its timers                              |
+|`set`               |*function* |         |Set a var on a timeline object                             |
+|`reset`             |*function* |         |Set the clock to `0`                                       |
+|`new`               |*function* |         |Adds an event on the timeline                              |
+|`draw`              |*function* |         |Draws the timeline **(BETA)**                              |
+|`getValue`          |*function* |         |Get a value without if exist                               |
+|`setDuraion`        |*function* |         |Just sets box.duration for clean code                      |
+|`setVerbosity`      |*function* |         |Activates/Deactivates debug prints.                        |
+|`eventList`         |*table*    |         |The objects inside the **BOX**                             |
+|`start`             |*number*   |`0`      |The start of an event relative to `clock`                  |
+|`eventList.duration`|*number*   |`0`      |How long an event will last                                |
+|`easeFunc`          |*string*   |`linear` |The tween procedure                                        |
+|`subject`           |*table*    |{}       |The starting values when the event starts                  |
+|`target`            |*table*    |{}       |The values targeted before the event ends                  |
+|`tween`             |*table*    |tweenobj |A tween object that process the event                      |
+|`state`             |*string*   |*`empty`*|The state of the event can be: *`empty` `alive`* & *`dead`*|
