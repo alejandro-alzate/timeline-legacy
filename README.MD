@@ -73,4 +73,4 @@ box={
 |`subject`           |*table*    |{}       |The starting values when the event starts|
 |`target`            |*table*    |{}       |The values targeted before the event ends|
 |`tween`             |*table*    |tweenobj |A tween object that process the event    |
-|`state`             |*string*   |*`empty`*|The state of the event can be: *`empty alive & dead`*|
+|`state`             |*string*   |*`empty`*|The state of the event can be: *`empty alive`* & *`dead`*|
