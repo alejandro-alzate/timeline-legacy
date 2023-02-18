@@ -1,4 +1,4 @@
-### TIMELINE-(legacy) ⚠(AWFULLY BROKEN NEW OVERHAUL (AVAIBLE)[../timeline]!!!)⚠ ###
+### TIMELINE-(legacy) ⚠(AWFULLY BROKEN NEW OVERHAUL [AVAIBLE HERE](github.com/alejandro-alzate/timeline)!!!)⚠ ###
 ## DESCRIPTION ##
 *A simple time dependent event manager*
 
