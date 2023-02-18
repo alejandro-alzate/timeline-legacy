@@ -1,4 +1,4 @@
-### TIMELINE (AWFULLY BROKEN NEW OVERHAUL AVAIBLE!!!) ###
+### TIMELINE ⚠(AWFULLY BROKEN NEW OVERHAUL AVAIBLE!!!) ###
 ## DESCRIPTION ##
 *A simple time dependent event manager*
 
