@@ -1,4 +1,4 @@
-### TIMELINE-(legacy) ⚠(AWFULLY BROKEN NEW OVERHAUL AVAIBLE!!!)⚠ ###
+### TIMELINE-(legacy) ⚠(AWFULLY BROKEN NEW OVERHAUL (AVAIBLE)[../timeline]!!!)⚠ ###
 ## DESCRIPTION ##
 *A simple time dependent event manager*
 
